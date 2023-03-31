@@ -127,3 +127,4 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+./day_2/rf_model.sav

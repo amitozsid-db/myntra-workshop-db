@@ -74,6 +74,16 @@ class ModelWrapper(mlflow.pyfunc.PythonModel):
 
 # COMMAND ----------
 
+current_user = (
+    dbutils.notebook.entry_point.getDbutils()
+    .notebook()
+    .getContext()
+    .tags()
+    .apply("user")
+)
+
+# COMMAND ----------
+
 # Create a Conda environment for the new MLflow Model that contains the XGBoost library
 # as a dependency, as well as the required CloudPickle library
 import cloudpickle
@@ -94,7 +104,7 @@ conda_env = {
     'name': 'hm_model_env'
 }
 
-mlflow.set_experiment("/Users/zoltan.toth@databricks.com/HM/zoltan-custom-model")
+mlflow.set_experiment(f"/Users/{current_user}/{current_user}-custom-model")
 
 with mlflow.start_run(run_name="So that I have a model registered") as mlflow_run:
   # Save the MLflow Model
