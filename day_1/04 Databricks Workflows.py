@@ -78,7 +78,7 @@ job_definition = {
                     "ebs_volume_count": 0,
                 },
                 "node_type_id": "Standard_DS3_v2",
-                "driver_node_type_id": "iStandard_DS3_v2",
+                "driver_node_type_id": "Standard_DS3_v2",
                 "custom_tags": {"ResourceClass": "SingleNode"},
                 "enable_elastic_disk": "true",
                 "data_security_mode": "SINGLE_USER",
