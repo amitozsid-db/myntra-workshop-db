@@ -231,7 +231,7 @@ client = MlflowClient()
 # COMMAND ----------
 
 #client.list_experiments()
-client.search_experiments() #dbr 12
+client.search_experiments() 
 
 # COMMAND ----------
 
