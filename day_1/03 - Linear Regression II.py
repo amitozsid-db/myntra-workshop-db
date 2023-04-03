@@ -196,14 +196,6 @@ print(f"R2 is {r2}")
 
 # COMMAND ----------
 
-# MAGIC %md <i18n value="cc0618e0-59d9-4a6d-bb90-a7945da1457e"/>
-# MAGIC 
-# MAGIC 
-# MAGIC 
-# MAGIC As you can see, our RMSE decreased when compared to the model without one-hot encoding, and the R2 increased as well!
-
-# COMMAND ----------
-
 # MAGIC %md-sandbox
 # MAGIC &copy; 2022 Databricks, Inc. All rights reserved.<br/>
 # MAGIC Apache, Apache Spark, Spark and the Spark logo are trademarks of the <a href="https://www.apache.org/">Apache Software Foundation</a>.<br/>
